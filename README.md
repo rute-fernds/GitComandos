@@ -21,7 +21,23 @@ git push origin nome_da_branch
 
 ## 🔄 Como trazer atualizações do repositório remoto?
 ```bash
+git pull --rebase origin nome_da_branch
+```
+
+## ⚠️ Fiz alterações sem atualizar a branch, o que fazer?
+
+```bash
+# Traga as atualizações do repositório remoto
 git pull origin nome_da_branch
+```
+Se houver conflito o git irá avisar e vc precisará resolver manualmente
+
+Após resolver os conflitos, continue o rebase e envie as alterações pro repositório:
+
+```bash
+git add .
+git rebase --continue
+git push origin nome_da_branch
 ```
 
 ## 🗑️ Como excluir arquivos da branch?
@@ -52,7 +68,7 @@ git checkout -b nome_da_branch
 ```
 
 
-## Como criar um ambiente virtual?
+## 🐍 Como criar um ambiente virtual Python?
 
 ```Bash
 python3 -m venv "nome do ambiente"
@@ -62,4 +78,3 @@ source nome_do_ambiente/bin/activate
 
 ```
 
-#
