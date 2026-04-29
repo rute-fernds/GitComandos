@@ -1,47 +1,54 @@
 # Comandos git
 
-Esse repositório tem o objetivo de ter informações sobre o uso do git, desde comando básicos para um commit quanto de versionamento de código. 
+Este repositório tem como objetivo reunir informações sobre o uso do Git, desde comandos básicos para realizar commits até operações de versionamento de código.
 
-## Como clonar um repositório?
 
-```Bash
-git clone link_do_repositório
+## 📥 Como clonar um repositório? 
+```bash
+git clone link_do_repositorio
+cd nome_do_repositorio
 
-cd nome_do_repositório
-
-# Abrir a pasta do repositório no VsCode
+# Abrir a pasta no VS Code
 code .
-
 ```
 
-## Como fazer um commit?
-
-```Bash
+## ✅ Como fazer um commit?
+```bash
 git add .
-git commit -m "Descriação das alterações feitas"
+git commit -m "Descrição das alterações feitas"
 git push origin nome_da_branch
 ```
 
-## Como trazer atualizações do repositório para o meu repo local?
-```Bash
-git push origin nome_da_branch
+## 🔄 Como trazer atualizações do repositório remoto?
+```bash
+git pull origin nome_da_branch
 ```
 
-## Como excluir arquivos da branch
-```Bash
+## 🗑️ Como excluir arquivos da branch?
+```bash
 git rm nome_do_arquivo
 
-#Para o caso de pastas ou arquivos dentro de pastas
-git rm -r nome_da_pasta ou caminho_do_arquivo
+# Para pastas ou arquivos dentro de pastas
+git rm -r nome_da_pasta_ou_caminho
 
-# Suba as alteações pro github
+# Envie as alterações pro repositório
 git commit -m "Exclusão de arquivos"
 git push origin nome_da_branch
 ```
 
-## Como saber em qual branch eu estou? Como criar uma nova branch?
+## 🌿 Como saber em qual branch estou e criar uma nova?
 ```Bash
+# Ver a branch atual
+git branch
 
+# Criar uma nova branch
+git branch nome_da_branch
+
+# Trocar para a nova branch
+git checkout nome_da_branch
+
+# Tudo em um único comando
+git checkout -b nome_da_branch
 ```
 
 
@@ -50,6 +57,7 @@ git push origin nome_da_branch
 ```Bash
 python3 -m venv "nome do ambiente"
 
+# Ativar ambiente
 source nome_do_ambiente/bin/activate
 
 ```
