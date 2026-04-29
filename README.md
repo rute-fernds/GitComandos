@@ -77,18 +77,6 @@ git rebase --continue
 git pull origin nome_da_branch
 ```
 
-## 🗑️ Como excluir arquivos da branch?
-```bash
-git rm nome_do_arquivo
-
-# Para pastas ou arquivos dentro de pastas
-git rm -r nome_da_pasta_ou_caminho
-
-# Envie as alterações pro repositório
-git commit -m "Exclusão de arquivos"
-git push origin nome_da_branch
-```
-
 ## 🌿 Como saber em qual branch estou e criar uma nova?
 ```Bash
 # Ver a branch atual
@@ -104,6 +92,17 @@ git checkout nome_da_branch
 git checkout -b nome_da_branch
 ```
 
+## 🗑️ Como excluir arquivos da branch?
+```bash
+git rm nome_do_arquivo
+
+# Para pastas ou arquivos dentro de pastas
+git rm -r nome_da_pasta_ou_caminho
+
+# Envie as alterações pro repositório
+git commit -m "Exclusão de arquivos"
+git push origin nome_da_branch
+```
 
 ## 🐍 Como criar um ambiente virtual Python?
 
