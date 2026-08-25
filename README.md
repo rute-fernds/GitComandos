@@ -103,6 +103,3 @@ git rm -r nome_da_pasta_ou_caminho
 git commit -m "Exclusão de arquivos"
 git push origin nome_da_branch
 ```
-
-```
-
