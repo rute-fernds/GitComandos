@@ -8,7 +8,7 @@ Este repositório tem como objetivo reunir informações sobre o uso do Git, des
 git clone link_do_repositorio
 cd nome_do_repositorio
 
-# Abrir a pasta no VS Code
+# Abrir a pasta no Vs Code
 code .
 ```
 
@@ -48,7 +48,7 @@ Após resolver ou se não houver conflitos, finalize normalmente:
 
 ```bash
 git add .
-git commit -m "Descrição das alterações"
+git commit -m "<tipo>[escopo opcional]: <descrição>"
 git push origin nome_da_branch
 ```
 
@@ -103,14 +103,6 @@ git rm -r nome_da_pasta_ou_caminho
 git commit -m "Exclusão de arquivos"
 git push origin nome_da_branch
 ```
-
-## 🐍 Como criar um ambiente virtual Python?
-
-```Bash
-python3 -m venv "nome do ambiente"
-
-# Ativar ambiente
-source nome_do_ambiente/bin/activate
 
 ```
 
